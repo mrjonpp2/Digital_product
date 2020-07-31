@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Variables */
+:root{
+    --cyan-color: #3498db;
+    --dark_cyan-color: #226ea0;
+    --white-color: white;
+    --grey-color: #34495e;
+    --background-color: #ecf0f1;
+    --footer-color: #f1c40f;
+    /* Tipografia */
+    --normal:12px;
+    /* Espaciado */ 
+    --space: 10px;
+    /* Box shadow */
+    --box: 0 0 1px #c1bcbc;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content_paypal a{
+    color: var(--cyan-color);
+}

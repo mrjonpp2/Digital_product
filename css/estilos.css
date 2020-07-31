@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* Variables */
+:root{
+--cyan-color: #3498db;
+--dark_cyan-color: #226ea0;
+--white-color: white;
+--grey-color: #34495e;
+--background-color: #ecf0f1;
+--footer-color: #f1c40f;
+/* Tipografia */
+--normal:12px;
+/* Espaciado */ 
+--space: 10px;
+/* Box shadow */
+--box: 0 0 1px #c1bcbc;
+}
+
+html,body{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
+
+}
+
+p, label{
+    font-size: var(--normal);
+}
+
+label{
+    padding-bottom: var(--space);
+}
+
+nav{
+    display: flex;
+    background-color: var(--cyan-color);
+    padding: var(--space);
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav li a{
+    color: var(--grey-color);
+    text-decoration: none;
+
+}
+
+nav li a:hover{
+    color: var(--white-color);
+}
+
+
+/* Main section*/
+.main_section{
+    padding: 20%;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+.products{
+    background-image: url("../images/curve.png");
+    height: 75px;
+    background-size: cover;
+    background-position: center top;
+    padding: 20%;
+    display: flex;
+
+}
+
+.product{
+    padding: var(--space);
+    margin-top: -240px;
+}
+
+.product .content{
+    background-color: var(--white-color);
+    padding: 15px;
+    box-shadow: var(--box);
+}
+
+.img_content{
+    text-align: center;
+}
+
+.main_button{
+    background-color: var(--cyan-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.main_button:hover{
+    background-color: var(--dark_cyan-color);
+}
+
+.characteristics{
+    /* background-size: cover;
+    background-position: center top; */
+    padding: 10%;
+    display: flex;
+}
+
+.characteristic{
+    padding: 30px;
+}
+
+.characteristic img{
+    max-height: 100px;
+}
+
+.characteristic .content{
+    padding: 5px;
+    box-shadow: var(--box);
+    text-align: left;
+    width: 50%;
+}
+
+/* Mentions section */
+.mentions_section{
+    text-align: center;
+    /* background-color: var(--background-color); */
+}
+
+.mentions{
+    padding: 5%;
+    display: flex;
+}
+
+.mention img{
+    width: 100%;
+    height: 100%;
+}
+
+.mention{
+    padding: 5px;
+}
+
+.mention .content{
+    padding: 5px;
+    box-shadow: var(--box);
+    text-align: left;
+}
+
+/* Venta */
+.modulo_pago{
+    background-color:var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+
+.modulo_pago_img{
+    max-width: 150px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.data{
+    margin-top: var(--space);
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.modulo_pago .main_button{
+    margin-top: 10px;
+}
+
+
+/* ------------------------------------------- Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--normal);
+    background-color: var(--footer-color);
+    padding: var(--space);
+    color: var(--white-color);
+  }
+
+.option_contact a{
+    color:var(--cyan-color);
+}
+
